@@ -61,14 +61,14 @@
 
         raise_layer {
 // ------------------------------------------------------------------------------------------------------------
-// |       |     |     |      |      |      |                   | PREV | NEXT  | PLAY  | MUTE | VOL-  | VOL+  |
+// |CLR_ALL| BT0 | BT1 | BT2  | BT3  | BT4  |                   | PREV | NEXT  | PLAY  | MUTE | VOL-  | VOL+  |
 // |       |     |     |      |      |      |                   |  7   |  8    |  9    |  +   |   -   |  RET  |
 // |       |     |     |      |      |      |                   |  4   |  5    |  6    |  *   |   /   | TO 0  |
 // |       |     |     |      |      |      |  n/a   |  |  n/a  |  1   |  2    |  3    |  0   |   =   |   .   |
 //                     |      |      |      |  n/a   |  |  n/a  |      |       |       |
             display-name = "Raise";
             bindings = <
-&trans &trans &trans &trans &trans &trans                       &kp C_PREV &kp C_NEXT &kp C_PP &kp C_MUTE &kp C_VOL_DN &kp C_VOL_UP
+&bt BT_CLR_ALL &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4   &kp C_PREV &kp C_NEXT &kp C_PP &kp C_MUTE &kp C_VOL_DN &kp C_VOL_UP
 &trans &trans &trans &trans &trans &trans                       &kp N7     &kp N8     &kp N9   &kp KP_PLUS &kp KP_MINUS &kp RET
 &trans &trans &trans &trans &trans &trans                       &kp N4     &kp N5     &kp N6   &kp KP_MULTIPLY &kp KP_DIVIDE &to 0
 &trans &trans &trans &trans &trans &trans    &none      &none   &kp N1     &kp N2     &kp N3   &kp N0     &kp KP_EQUAL &kp KP_DOT
